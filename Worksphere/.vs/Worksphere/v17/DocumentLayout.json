@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\school\\univ\\semester 4\\software engineering\\github\\worksphere\\worksphere\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\school\\univ\\semester 4\\software engineering\\github\\worksphere\\worksphere\\model\\workspheremodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:model\\workspheremodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Navbar.Master",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Navbar.Master",
+              "RelativeDocumentMoniker": "Navbar.Master",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Navbar.Master",
+              "RelativeToolTip": "Navbar.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T16:55:25.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WorksphereModel.edmx [Diagram1]",
               "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Model\\WorksphereModel.edmx",
               "RelativeDocumentMoniker": "Model\\WorksphereModel.edmx",

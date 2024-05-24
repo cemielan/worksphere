@@ -122,6 +122,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WorksphereModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Navbar.Master.cs">
+      <DependentUpon>Navbar.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navbar.Master.designer.cs">
+      <DependentUpon>Navbar.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +139,7 @@
     <Content Include="Model\WorksphereModel.edmx.diagram">
       <DependentUpon>WorksphereModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Navbar.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -142,6 +150,10 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Applicant\" />
+    <Folder Include="Views\Employer\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
