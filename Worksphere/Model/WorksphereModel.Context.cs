@@ -27,7 +27,6 @@ namespace Worksphere.Model
     
         public virtual DbSet<Applicant> Applicants { get; set; }
         public virtual DbSet<ApplymentDetail> ApplymentDetails { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Employer> Employers { get; set; }
         public virtual DbSet<Work> Works { get; set; }
     }
