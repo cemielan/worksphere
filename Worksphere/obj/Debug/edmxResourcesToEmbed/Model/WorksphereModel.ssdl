@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorksphereDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Applicant">
+    <Key>
+      <PropertyRef Name="ApplicantID" />
+    </Key>
+    <Property Name="ApplicantID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="Email" Type="varchar(max)" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CV" Type="varbinary(max)" />
+    <Property Name="ProfilePicture" Type="varbinary(max)" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplymentDetail">
+    <Key>
+      <PropertyRef Name="ApplymentID" />
+    </Key>
+    <Property Name="ApplymentID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="ApplicantID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="WorkID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="ApplyDate" Type="date" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employer">
+    <Key>
+      <PropertyRef Name="EmployerID" />
+    </Key>
+    <Property Name="EmployerID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar(max)" Nullable="false" />
+    <Property Name="CompanyEmail" Type="varchar(max)" Nullable="false" />
+    <Property Name="UserName" Type="varchar(max)" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyAddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="CompanyLogo" Type="varbinary(max)" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Work">
+    <Key>
+      <PropertyRef Name="WorkID" />
+    </Key>
+    <Property Name="WorkID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="WorkTitle" Type="varchar(max)" Nullable="false" />
+    <Property Name="WorkDescription" Type="varchar(max)" Nullable="false" />
+    <Property Name="WorkType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Keyword" Type="varchar(max)" Nullable="false" />
+    <Property Name="CategoryID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="EmployerID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Salary" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ApplyDetail_Applicant">
+    <End Role="Applicant" Type="Self.Applicant" Multiplicity="1" />
+    <End Role="ApplymentDetail" Type="Self.ApplymentDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applicant">
+        <PropertyRef Name="ApplicantID" />
+      </Principal>
+      <Dependent Role="ApplymentDetail">
+        <PropertyRef Name="ApplicantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ApplyDetail_Work">
+    <End Role="Work" Type="Self.Work" Multiplicity="1" />
+    <End Role="ApplymentDetail" Type="Self.ApplymentDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Work">
+        <PropertyRef Name="WorkID" />
+      </Principal>
+      <Dependent Role="ApplymentDetail">
+        <PropertyRef Name="WorkID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Work_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Work" Type="Self.Work" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Work">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Work_Employer">
+    <End Role="Employer" Type="Self.Employer" Multiplicity="1" />
+    <End Role="Work" Type="Self.Work" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employer">
+        <PropertyRef Name="EmployerID" />
+      </Principal>
+      <Dependent Role="Work">
+        <PropertyRef Name="EmployerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WorksphereDBModelStoreContainer">
+    <EntitySet Name="Applicant" EntityType="Self.Applicant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplymentDetail" EntityType="Self.ApplymentDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employer" EntityType="Self.Employer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Work" EntityType="Self.Work" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ApplyDetail_Applicant" Association="Self.FK_ApplyDetail_Applicant">
+      <End Role="Applicant" EntitySet="Applicant" />
+      <End Role="ApplymentDetail" EntitySet="ApplymentDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ApplyDetail_Work" Association="Self.FK_ApplyDetail_Work">
+      <End Role="Work" EntitySet="Work" />
+      <End Role="ApplymentDetail" EntitySet="ApplymentDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Work_Category" Association="Self.FK_Work_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Work" EntitySet="Work" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Work_Employer" Association="Self.FK_Work_Employer">
+      <End Role="Employer" EntitySet="Employer" />
+      <End Role="Work" EntitySet="Work" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
