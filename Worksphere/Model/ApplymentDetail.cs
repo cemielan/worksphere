@@ -20,7 +20,7 @@ namespace Worksphere.Model
         public System.DateTime ApplyDate { get; set; }
         public string Status { get; set; }
     
-        public virtual Applicant Applicant { get; set; }
         public virtual Work Work { get; set; }
+        public virtual Applicants Applicant { get; set; }
     }
 }

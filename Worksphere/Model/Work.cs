@@ -32,6 +32,6 @@ namespace Worksphere.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ApplymentDetail> ApplymentDetails { get; set; }
         public virtual Category Category { get; set; }
-        public virtual Employer Employer { get; set; }
+        public virtual Employers Employer { get; set; }
     }
 }

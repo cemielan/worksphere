@@ -24,6 +24,15 @@ namespace Worksphere.Views.Applicant
         protected global::System.Web.UI.WebControls.TextBox TbName;
 
         /// <summary>
+        /// LblName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblName;
+
+        /// <summary>
         /// TbAge control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Worksphere.Views.Applicant
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TbAge;
+
+        /// <summary>
+        /// LblAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblAge;
 
         /// <summary>
         /// TbEmail control.
@@ -42,6 +60,15 @@ namespace Worksphere.Views.Applicant
         protected global::System.Web.UI.WebControls.TextBox TbEmail;
 
         /// <summary>
+        /// LblEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblEmail;
+
+        /// <summary>
         /// TbPassword control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace Worksphere.Views.Applicant
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TbPassword;
+
+        /// <summary>
+        /// LblPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblPassword;
 
         /// <summary>
         /// TbPhoneNumber control.
@@ -60,6 +96,15 @@ namespace Worksphere.Views.Applicant
         protected global::System.Web.UI.WebControls.TextBox TbPhoneNumber;
 
         /// <summary>
+        /// LblPhoneNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblPhoneNumber;
+
+        /// <summary>
         /// TbDescription control.
         /// </summary>
         /// <remarks>
@@ -67,6 +112,15 @@ namespace Worksphere.Views.Applicant
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TbDescription;
+
+        /// <summary>
+        /// LblDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblDescription;
 
         /// <summary>
         /// BtnUpload control.
@@ -85,5 +139,14 @@ namespace Worksphere.Views.Applicant
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnRegister;
+
+        /// <summary>
+        /// BtnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBack;
     }
 }

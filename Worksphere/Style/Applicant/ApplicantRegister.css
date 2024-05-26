@@ -1,21 +1,99 @@
-﻿.container {
-    margin: 5% 5%;
-    box-shadow: 0px 0px 10px 10px rgb(243,243,243);
-    padding: 25px 45px;
+﻿* {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    margin: 5% 10%;
+    box-shadow: 0px 0px 10px 15px rgb(230,230,230);
+    padding: 25px 80px;
+    padding-bottom: 100px;
     border-radius: 20px;
 }
 
 .container h2{
-    font-size:35px;
-    font-weight:bolder;
+    font-size:50px;
+    font-weight:800;
 }
 
 .register-detail {
     background-color: rgb(243,243,243);
     display: flex;
     flex-direction:column;
-    padding-top: 40px;
-    height: 60vh;
+    padding: 0px 40px;
+    height: 80vh;
     justify-content: space-evenly;
+    border-radius: 20px;
 }
 
+.register-detail h4{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+.name-age-input{
+    display:flex;
+    justify-content: space-between;
+}
+
+.name-input, .age-input{
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+
+.input-container{
+    display: flex;
+    flex-direction:column;
+}
+
+.tb-name, .tb-age{
+    height: 55px;
+    width: auto;
+    padding: 0px 20px;
+    font-size: 18px;
+    border: none;
+}
+
+.tb-input {
+    height: 55px;
+    padding: 0px 20px;
+    font-size: 18px;
+    border: none;
+}
+
+.button-upload {
+    align-self: start;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    font-weight:800;
+}
+
+.button-register {
+    align-self: end;
+    font-size: 23px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    font-weight: 800;
+}
+
+.label-error {
+    margin-top:5px;
+    margin-left: 20px;
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.button-back{
+    background-color:white;
+    font-weight: 700;
+    font-size:17px;
+    margin-top: 30px;
+    border-radius:20px;
+    padding: 10px;
+}

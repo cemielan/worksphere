@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="WorksphereDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="Applicant">
+  <EntityType Name="Applicants">
     <Key>
       <PropertyRef Name="ApplicantID" />
     </Key>
@@ -31,7 +31,7 @@
     <Property Name="CategoryID" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="CategoryName" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
-  <EntityType Name="Employer">
+  <EntityType Name="Employers">
     <Key>
       <PropertyRef Name="EmployerID" />
     </Key>
@@ -43,6 +43,7 @@
     <Property Name="CompanyAddress" Type="varchar(max)" Nullable="false" />
     <Property Name="CompanyLogo" Type="varbinary(max)" />
     <Property Name="PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyType" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Work">
     <Key>
@@ -58,10 +59,10 @@
     <Property Name="Salary" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_ApplyDetail_Applicant">
-    <End Role="Applicant" Type="Self.Applicant" Multiplicity="1" />
+    <End Role="Applicants" Type="Self.Applicants" Multiplicity="1" />
     <End Role="ApplymentDetail" Type="Self.ApplymentDetail" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Applicant">
+      <Principal Role="Applicants">
         <PropertyRef Name="ApplicantID" />
       </Principal>
       <Dependent Role="ApplymentDetail">
@@ -94,10 +95,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Work_Employer">
-    <End Role="Employer" Type="Self.Employer" Multiplicity="1" />
+    <End Role="Employers" Type="Self.Employers" Multiplicity="1" />
     <End Role="Work" Type="Self.Work" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Employer">
+      <Principal Role="Employers">
         <PropertyRef Name="EmployerID" />
       </Principal>
       <Dependent Role="Work">
@@ -106,13 +107,13 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="WorksphereDBModelStoreContainer">
-    <EntitySet Name="Applicant" EntityType="Self.Applicant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Applicants" EntityType="Self.Applicants" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ApplymentDetail" EntityType="Self.ApplymentDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Employer" EntityType="Self.Employer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employers" EntityType="Self.Employers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Work" EntityType="Self.Work" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_ApplyDetail_Applicant" Association="Self.FK_ApplyDetail_Applicant">
-      <End Role="Applicant" EntitySet="Applicant" />
+      <End Role="Applicants" EntitySet="Applicants" />
       <End Role="ApplymentDetail" EntitySet="ApplymentDetail" />
     </AssociationSet>
     <AssociationSet Name="FK_ApplyDetail_Work" Association="Self.FK_ApplyDetail_Work">
@@ -124,7 +125,7 @@
       <End Role="Work" EntitySet="Work" />
     </AssociationSet>
     <AssociationSet Name="FK_Work_Employer" Association="Self.FK_Work_Employer">
-      <End Role="Employer" EntitySet="Employer" />
+      <End Role="Employers" EntitySet="Employers" />
       <End Role="Work" EntitySet="Work" />
     </AssociationSet>
   </EntityContainer>

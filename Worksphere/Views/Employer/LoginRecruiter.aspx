@@ -19,16 +19,17 @@
         <div class="login-input">
             <asp:TextBox ID="TbEmail" runat="server" placeholder="Email Address" class="textbox-email"></asp:TextBox>
             <asp:TextBox ID="TbPassword" runat="server" placeholder="Password" class="textbox-password"></asp:TextBox>
+            <asp:Label ID="LblError" runat="server" Text="" CssClass="label-error"></asp:Label>
             <a href="#" class="forgot-link">Forgot your Password?</a>
-            <asp:Button ID="BtnLogin" runat="server" Text="Login" class="button-login"/>
+            <asp:Button ID="BtnLogin" runat="server" Text="Login" class="button-login" OnClick="BtnLogin_Click"/>
         </div>
 
         <div class="login-register">
-            <p class="register-text">Not Registered</p>
-            <p class="feature-text">Search & Apply</p>
-            <p class="feature-text">Job Alerts</p>
-            <p class="feature-text">Free CV Review</p>
-            <asp:Button ID="ButtonRegister" runat="server" Text="Register" class="button-register"/>
+            <p class="register-text">Not Registered?</p>
+            <p class="feature-text">Search in CV-Library</p>
+            <p class="feature-text">Advertise</p>
+            <p class="feature-text">Customer Service</p>
+            <asp:Button ID="ButtonRegister" runat="server" Text="Register" class="button-register" OnClick="ButtonRegister_Click"/>
         </div>
     </div>
 

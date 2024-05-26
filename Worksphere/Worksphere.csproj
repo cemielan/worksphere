@@ -92,13 +92,21 @@
     <Content Include="Style\Applicant\ApplicantRegister.css" />
     <Content Include="Style\Applicant\LoginApplicant.css" />
     <Content Include="Style\Employer\LoginRecruiter.css" />
+    <Content Include="Style\Employer\RegisterEmployer.css" />
     <Content Include="Views\Applicant\ApplicantRegister.aspx" />
     <Content Include="Views\Applicant\LoginApplicant.aspx" />
     <Content Include="Views\Employer\LoginRecruiter.aspx" />
+    <Content Include="Views\Employer\RegisterEmployer.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Applicant.cs">
+    <Compile Include="Controller\ApplicantController.cs" />
+    <Compile Include="Controller\EmployerController.cs" />
+    <Compile Include="Factory\ApplicantFactory.cs" />
+    <Compile Include="Factory\EmployerFactory.cs" />
+    <Compile Include="Handler\ApplicantHandler.cs" />
+    <Compile Include="Handler\EmployerHandler.cs" />
+    <Compile Include="Model\Applicants.cs">
       <DependentUpon>WorksphereModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\ApplymentDetail.cs">
@@ -107,7 +115,7 @@
     <Compile Include="Model\Category.cs">
       <DependentUpon>WorksphereModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Employer.cs">
+    <Compile Include="Model\Employers.cs">
       <DependentUpon>WorksphereModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Work.cs">
@@ -136,6 +144,9 @@
       <DependentUpon>Navbar.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ApplicantRepository.cs" />
+    <Compile Include="Repository\DatabaseSingleton.cs" />
+    <Compile Include="Repository\EmployerRepository.cs" />
     <Compile Include="Views\Applicant\ApplicantRegister.aspx.cs">
       <DependentUpon>ApplicantRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,6 +167,13 @@
     </Compile>
     <Compile Include="Views\Employer\LoginRecruiter.aspx.designer.cs">
       <DependentUpon>LoginRecruiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employer\RegisterEmployer.aspx.cs">
+      <DependentUpon>RegisterEmployer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Employer\RegisterEmployer.aspx.designer.cs">
+      <DependentUpon>RegisterEmployer.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -178,12 +196,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Factory\" />
-    <Folder Include="Handler\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

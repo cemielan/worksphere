@@ -1,21 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="WorksphereDBModelStoreContainer" CdmEntityContainer="WorksphereDBEntities">
-    <EntitySetMapping Name="Applicants">
-      <EntityTypeMapping TypeName="WorksphereDBModel.Applicant">
-        <MappingFragment StoreEntitySet="Applicant">
-          <ScalarProperty Name="ApplicantID" ColumnName="ApplicantID" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Age" ColumnName="Age" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-          <ScalarProperty Name="CV" ColumnName="CV" />
-          <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="ApplymentDetails">
       <EntityTypeMapping TypeName="WorksphereDBModel.ApplymentDetail">
         <MappingFragment StoreEntitySet="ApplymentDetail">
@@ -35,20 +20,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Employers">
-      <EntityTypeMapping TypeName="WorksphereDBModel.Employer">
-        <MappingFragment StoreEntitySet="Employer">
-          <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
-          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
-          <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
-          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
-          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Works">
       <EntityTypeMapping TypeName="WorksphereDBModel.Work">
         <MappingFragment StoreEntitySet="Work">
@@ -60,6 +31,36 @@
           <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
           <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
           <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employers1">
+      <EntityTypeMapping TypeName="WorksphereDBModel.Employers">
+        <MappingFragment StoreEntitySet="Employers">
+          <ScalarProperty Name="CompanyType" ColumnName="CompanyType" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applicants1">
+      <EntityTypeMapping TypeName="WorksphereDBModel.Applicants">
+        <MappingFragment StoreEntitySet="Applicants">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplicantID" ColumnName="ApplicantID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -4,8 +4,8 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="WorksphereDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Applicant">
+    <Schema Namespace="WorksphereDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Applicants">
           <Key>
             <PropertyRef Name="ApplicantID" />
           </Key>
@@ -36,7 +36,7 @@
           <Property Name="CategoryID" Type="char" MaxLength="5" Nullable="false" />
           <Property Name="CategoryName" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <EntityType Name="Employer">
+        <EntityType Name="Employers">
           <Key>
             <PropertyRef Name="EmployerID" />
           </Key>
@@ -48,6 +48,7 @@
           <Property Name="CompanyAddress" Type="varchar(max)" Nullable="false" />
           <Property Name="CompanyLogo" Type="varbinary(max)" />
           <Property Name="PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CompanyType" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Work">
           <Key>
@@ -63,10 +64,10 @@
           <Property Name="Salary" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_ApplyDetail_Applicant">
-          <End Role="Applicant" Type="Self.Applicant" Multiplicity="1" />
+          <End Role="Applicants" Type="Self.Applicants" Multiplicity="1" />
           <End Role="ApplymentDetail" Type="Self.ApplymentDetail" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Applicant">
+            <Principal Role="Applicants">
               <PropertyRef Name="ApplicantID" />
             </Principal>
             <Dependent Role="ApplymentDetail">
@@ -99,10 +100,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Work_Employer">
-          <End Role="Employer" Type="Self.Employer" Multiplicity="1" />
+          <End Role="Employers" Type="Self.Employers" Multiplicity="1" />
           <End Role="Work" Type="Self.Work" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Employer">
+            <Principal Role="Employers">
               <PropertyRef Name="EmployerID" />
             </Principal>
             <Dependent Role="Work">
@@ -111,13 +112,13 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="WorksphereDBModelStoreContainer">
-          <EntitySet Name="Applicant" EntityType="Self.Applicant" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Applicants" EntityType="Self.Applicants" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ApplymentDetail" EntityType="Self.ApplymentDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Employer" EntityType="Self.Employer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employers" EntityType="Self.Employers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Work" EntityType="Self.Work" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_ApplyDetail_Applicant" Association="Self.FK_ApplyDetail_Applicant">
-            <End Role="Applicant" EntitySet="Applicant" />
+            <End Role="Applicants" EntitySet="Applicants" />
             <End Role="ApplymentDetail" EntitySet="ApplymentDetail" />
           </AssociationSet>
           <AssociationSet Name="FK_ApplyDetail_Work" Association="Self.FK_ApplyDetail_Work">
@@ -129,30 +130,14 @@
             <End Role="Work" EntitySet="Work" />
           </AssociationSet>
           <AssociationSet Name="FK_Work_Employer" Association="Self.FK_Work_Employer">
-            <End Role="Employer" EntitySet="Employer" />
+            <End Role="Employers" EntitySet="Employers" />
             <End Role="Work" EntitySet="Work" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WorksphereDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Applicant">
-          <Key>
-            <PropertyRef Name="ApplicantID" />
-          </Key>
-          <Property Name="ApplicantID" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Age" Type="Int32" Nullable="false" />
-          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CV" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="ProfilePicture" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="ApplymentDetails" Relationship="Self.FK_ApplyDetail_Applicant" FromRole="Applicant" ToRole="ApplymentDetail" />
-        </EntityType>
         <EntityType Name="ApplymentDetail">
           <Key>
             <PropertyRef Name="ApplymentID" />
@@ -162,8 +147,8 @@
           <Property Name="WorkID" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="ApplyDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Applicant" Relationship="Self.FK_ApplyDetail_Applicant" FromRole="ApplymentDetail" ToRole="Applicant" />
           <NavigationProperty Name="Work" Relationship="Self.FK_ApplyDetail_Work" FromRole="ApplymentDetail" ToRole="Work" />
+          <NavigationProperty Name="Applicant" Relationship="WorksphereDBModel.FK_ApplyDetail_Applicant" FromRole="ApplymentDetail" ToRole="Applicant" />
         </EntityType>
         <EntityType Name="Category">
           <Key>
@@ -172,20 +157,6 @@
           <Property Name="CategoryID" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Works" Relationship="Self.FK_Work_Category" FromRole="Category" ToRole="Work" />
-        </EntityType>
-        <EntityType Name="Employer">
-          <Key>
-            <PropertyRef Name="EmployerID" />
-          </Key>
-          <Property Name="EmployerID" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CompanyEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CompanyAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Works" Relationship="Self.FK_Work_Employer" FromRole="Employer" ToRole="Work" />
         </EntityType>
         <EntityType Name="Work">
           <Key>
@@ -201,20 +172,8 @@
           <Property Name="Salary" Type="Int32" Nullable="false" />
           <NavigationProperty Name="ApplymentDetails" Relationship="Self.FK_ApplyDetail_Work" FromRole="Work" ToRole="ApplymentDetail" />
           <NavigationProperty Name="Category" Relationship="Self.FK_Work_Category" FromRole="Work" ToRole="Category" />
-          <NavigationProperty Name="Employer" Relationship="Self.FK_Work_Employer" FromRole="Work" ToRole="Employer" />
+          <NavigationProperty Name="Employer" Relationship="WorksphereDBModel.FK_Work_Employer" FromRole="Work" ToRole="Employer" />
         </EntityType>
-        <Association Name="FK_ApplyDetail_Applicant">
-          <End Role="Applicant" Type="Self.Applicant" Multiplicity="1" />
-          <End Role="ApplymentDetail" Type="Self.ApplymentDetail" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Applicant">
-              <PropertyRef Name="ApplicantID" />
-            </Principal>
-            <Dependent Role="ApplymentDetail">
-              <PropertyRef Name="ApplicantID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ApplyDetail_Work">
           <End Role="Work" Type="Self.Work" Multiplicity="1" />
           <End Role="ApplymentDetail" Type="Self.ApplymentDetail" Multiplicity="*" />
@@ -239,9 +198,47 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityContainer Name="WorksphereDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ApplymentDetails" EntityType="Self.ApplymentDetail" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Works" EntityType="Self.Work" />
+          <AssociationSet Name="FK_ApplyDetail_Work" Association="Self.FK_ApplyDetail_Work">
+            <End Role="Work" EntitySet="Works" />
+            <End Role="ApplymentDetail" EntitySet="ApplymentDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Work_Category" Association="Self.FK_Work_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Work" EntitySet="Works" />
+          </AssociationSet>
+          <EntitySet Name="Employers1" EntityType="WorksphereDBModel.Employers" />
+          <AssociationSet Name="FK_Work_Employer" Association="WorksphereDBModel.FK_Work_Employer">
+            <End EntitySet="Employers1" Role="Employer" />
+            <End EntitySet="Works" Role="Work" />
+          </AssociationSet>
+          <EntitySet Name="Applicants1" EntityType="WorksphereDBModel.Applicants" />
+          <AssociationSet Name="FK_ApplyDetail_Applicant" Association="WorksphereDBModel.FK_ApplyDetail_Applicant">
+            <End Role="Applicant" EntitySet="Applicants1" />
+            <End Role="ApplymentDetail" EntitySet="ApplymentDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Employers">
+          <Key>
+            <PropertyRef Name="EmployerID" />
+          </Key>
+          <Property Name="EmployerID" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" Type="String" />
+          <Property Name="CompanyName" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="CompanyEmail" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="UserName" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="CompanyAddress" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="CompanyLogo" MaxLength="Max" FixedLength="false" Type="Binary" />
+          <Property Name="PhoneNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="CompanyType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <NavigationProperty Name="Works" Relationship="WorksphereDBModel.FK_Work_Employer" FromRole="Employer" ToRole="Work" />
+        </EntityType>
         <Association Name="FK_Work_Employer">
-          <End Role="Employer" Type="Self.Employer" Multiplicity="1" />
-          <End Role="Work" Type="Self.Work" Multiplicity="*" />
+          <End Type="WorksphereDBModel.Employers" Multiplicity="1" Role="Employer" />
+          <End Type="WorksphereDBModel.Work" Multiplicity="*" Role="Work" />
           <ReferentialConstraint>
             <Principal Role="Employer">
               <PropertyRef Name="EmployerID" />
@@ -251,50 +248,39 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="WorksphereDBEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Applicants" EntityType="Self.Applicant" />
-          <EntitySet Name="ApplymentDetails" EntityType="Self.ApplymentDetail" />
-          <EntitySet Name="Categories" EntityType="Self.Category" />
-          <EntitySet Name="Employers" EntityType="Self.Employer" />
-          <EntitySet Name="Works" EntityType="Self.Work" />
-          <AssociationSet Name="FK_ApplyDetail_Applicant" Association="Self.FK_ApplyDetail_Applicant">
-            <End Role="Applicant" EntitySet="Applicants" />
-            <End Role="ApplymentDetail" EntitySet="ApplymentDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK_ApplyDetail_Work" Association="Self.FK_ApplyDetail_Work">
-            <End Role="Work" EntitySet="Works" />
-            <End Role="ApplymentDetail" EntitySet="ApplymentDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Work_Category" Association="Self.FK_Work_Category">
-            <End Role="Category" EntitySet="Categories" />
-            <End Role="Work" EntitySet="Works" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Work_Employer" Association="Self.FK_Work_Employer">
-            <End Role="Employer" EntitySet="Employers" />
-            <End Role="Work" EntitySet="Works" />
-          </AssociationSet>
-        </EntityContainer>
+        <EntityType Name="Applicants">
+          <Key>
+            <PropertyRef Name="ApplicantID" />
+          </Key>
+          <Property Name="ApplicantID" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CV" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ProfilePicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ApplymentDetails" Relationship="WorksphereDBModel.FK_ApplyDetail_Applicant" FromRole="Applicant" ToRole="ApplymentDetail" />
+        </EntityType>
+        <Association Name="FK_ApplyDetail_Applicant">
+          <End Type="WorksphereDBModel.Applicants" Role="Applicant" Multiplicity="1" />
+          <End Type="WorksphereDBModel.ApplymentDetail" Role="ApplymentDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Applicant">
+              <PropertyRef Name="ApplicantID" />
+            </Principal>
+            <Dependent Role="ApplymentDetail">
+              <PropertyRef Name="ApplicantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="WorksphereDBModelStoreContainer" CdmEntityContainer="WorksphereDBEntities">
-          <EntitySetMapping Name="Applicants">
-            <EntityTypeMapping TypeName="WorksphereDBModel.Applicant">
-              <MappingFragment StoreEntitySet="Applicant">
-                <ScalarProperty Name="ApplicantID" ColumnName="ApplicantID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Age" ColumnName="Age" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-                <ScalarProperty Name="CV" ColumnName="CV" />
-                <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="ApplymentDetails">
             <EntityTypeMapping TypeName="WorksphereDBModel.ApplymentDetail">
               <MappingFragment StoreEntitySet="ApplymentDetail">
@@ -314,20 +300,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Employers">
-            <EntityTypeMapping TypeName="WorksphereDBModel.Employer">
-              <MappingFragment StoreEntitySet="Employer">
-                <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
-                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
-                <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
-                <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
-                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Works">
             <EntityTypeMapping TypeName="WorksphereDBModel.Work">
               <MappingFragment StoreEntitySet="Work">
@@ -339,6 +311,36 @@
                 <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
                 <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
                 <ScalarProperty Name="Salary" ColumnName="Salary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employers1">
+            <EntityTypeMapping TypeName="WorksphereDBModel.Employers">
+              <MappingFragment StoreEntitySet="Employers">
+                <ScalarProperty Name="CompanyType" ColumnName="CompanyType" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+                <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Applicants1">
+            <EntityTypeMapping TypeName="WorksphereDBModel.Applicants">
+              <MappingFragment StoreEntitySet="Applicants">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
+                <ScalarProperty Name="CV" ColumnName="CV" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ApplicantID" ColumnName="ApplicantID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
