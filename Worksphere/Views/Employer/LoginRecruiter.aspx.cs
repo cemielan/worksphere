@@ -26,7 +26,7 @@ namespace Worksphere.Views.Employer
             if (employer != null)
             {
                 Session["users"] = "Employer";
-                Response.Redirect("###");
+                Response.Redirect("#");
             }
             else
             {
