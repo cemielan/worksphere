@@ -4,10 +4,11 @@
 }
 
 .container {
-    margin: 5% 5%;
+    margin: 100px 100px;
     box-shadow: 0px 0px 10px 15px rgb(230,230,230);
-    padding: 25px 45px;
+    padding: 35px 45px;
     border-radius: 20px;
+    height: auto;
 }
 
 .login-head {
@@ -15,7 +16,6 @@
 }
 
 .login-text {
-    
     font-weight: 600;
     font-size: 20px;
     padding: 15px 50px;
@@ -38,7 +38,7 @@
     background-color: rgb(243,243,243);
     display: flex;
     padding-top: 40px;
-    height: 60vh;
+    height: auto;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -59,61 +59,77 @@
 }
 
 .textbox-email {
-    height: 48px;
+    height: 35px;
     margin: 20px 0px;
     padding: 15px 24px;
-    font-size: 24px;
+    font-size: 18px;
     border: none;
 }
 
 .textbox-password {
-    height: 48px;
+    height: 35px;
     margin: 20px 0px;
     padding: 15px 24px;
-    font-size: 24px;
+    font-size: 18px;
     border: none;
 }
 
 .forgot-link {
     text-decoration: none;
-    color: black;
+    color: blue;
     margin: 20px 0px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .button-login {
     border: none;
     margin: 20px 0px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 40px;
     width: 100px;
     background-color: white;
     padding: 10px 5px;
     height: 60px;
+    transition: 0.5s;
+}
+
+.button-login:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
 }
 
 .register-text {
     font-size: 33px;
     font-weight: normal;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .feature-text {
     margin: 5px 0px;
-    font-size: 26px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button-register {
     border: none;
     margin: 60px 0px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 40px;
     width: 130px;
     background-color: white;
     padding: 10px 5px;
     height: 60px;
+    transition: 0.5s;
+}
+
+.button-register:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
 }
 
 .label-error {
