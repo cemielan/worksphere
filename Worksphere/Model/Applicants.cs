@@ -18,6 +18,8 @@ namespace Worksphere.Model
         public Applicants()
         {
             this.ApplymentDetails = new HashSet<ApplymentDetail>();
+            this.Communities = new HashSet<Community>();
+            this.Replies = new HashSet<Reply>();
         }
     
         public string ApplicantID { get; set; }
@@ -32,5 +34,9 @@ namespace Worksphere.Model
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ApplymentDetail> ApplymentDetails { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Community> Communities { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Reply> Replies { get; set; }
     }
 }

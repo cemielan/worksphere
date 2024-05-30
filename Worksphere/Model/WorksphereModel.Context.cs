@@ -30,5 +30,7 @@ namespace Worksphere.Model
         public virtual DbSet<Work> Works { get; set; }
         public virtual DbSet<Employers> Employers1 { get; set; }
         public virtual DbSet<Applicants> Applicants1 { get; set; }
+        public virtual DbSet<Community> Communities { get; set; }
+        public virtual DbSet<Reply> Replies { get; set; }
     }
 }

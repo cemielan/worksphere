@@ -115,7 +115,13 @@
     <Compile Include="Model\Category.cs">
       <DependentUpon>WorksphereModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Community.cs">
+      <DependentUpon>WorksphereModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Employers.cs">
+      <DependentUpon>WorksphereModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Reply.cs">
       <DependentUpon>WorksphereModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Work.cs">

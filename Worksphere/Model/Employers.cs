@@ -18,6 +18,8 @@ namespace Worksphere.Model
         public Employers()
         {
             this.Works = new HashSet<Work>();
+            this.Communities = new HashSet<Community>();
+            this.Replies = new HashSet<Reply>();
         }
     
         public string EmployerID { get; set; }
@@ -32,5 +34,9 @@ namespace Worksphere.Model
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Work> Works { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Community> Communities { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Reply> Replies { get; set; }
     }
 }
