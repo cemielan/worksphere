@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\worksphere\\Worksphere\\",
+  "WorkspaceRootPath": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\worksphere\\Worksphere\\views\\applicant\\applicantregister.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\school\\univ\\semester 4\\software engineering\\github\\worksphere\\worksphere\\views\\applicant\\applicantregister.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\applicant\\applicantregister.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\style\\employer\\registeremployer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\style\\employer\\registeremployer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:style\\employer\\registeremployer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\style\\applicant\\applicantregister.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\style\\applicant\\applicantregister.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:style\\applicant\\applicantregister.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\views\\employer\\registeremployer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\views\\employer\\registeremployer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\employer\\registeremployer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\style\\employer\\loginrecruiter.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\style\\employer\\loginrecruiter.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:style\\employer\\loginrecruiter.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\style\\applicant\\loginapplicant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\style\\applicant\\loginapplicant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:style\\applicant\\loginapplicant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\views\\applicant\\loginapplicant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\views\\applicant\\loginapplicant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\applicant\\loginapplicant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\views\\employer\\loginrecruiter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\views\\employer\\loginrecruiter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\employer\\loginrecruiter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\handler\\employerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\handler\\employerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:handler\\employerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\handler\\applicanthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\handler\\applicanthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:handler\\applicanthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -49,27 +49,27 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__WORKSPHERE_WORKSPHERE_APP_DATA_WORKSPHEREDB.MDF/True/SqlTable/dbo.Applicants.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|d:\\worksphere\\worksphere\\views\\employer\\loginrecruiter.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\views\\employer\\loginrecruiter.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\employer\\loginrecruiter.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\worksphere\\Worksphere\\views\\applicant\\applicantregister.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\views\\applicant\\applicantregister.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\applicant\\applicantregister.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\worksphere\\Worksphere\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\worksphere\\Worksphere\\factory\\applicantfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\factory\\applicantfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:factory\\applicantfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\worksphere\\Worksphere\\repository\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\repository\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:repository\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\worksphere\\Worksphere\\views\\applicant\\loginapplicant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\views\\applicant\\loginapplicant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01965D49-FEBC-4991-B1E5-7A98C736115C}|Worksphere.csproj|solutionrelative:views\\applicant\\loginapplicant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -80,7 +80,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -88,57 +88,39 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "RegisterEmployer.css",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Style\\Employer\\RegisterEmployer.css",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Employer\\RegisterEmployer.css",
               "RelativeDocumentMoniker": "Style\\Employer\\RegisterEmployer.css",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Style\\Employer\\RegisterEmployer.css",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Employer\\RegisterEmployer.css",
               "RelativeToolTip": "Style\\Employer\\RegisterEmployer.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-30T04:07:08.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:07:08.462Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ApplicantRegister.css",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Style\\Applicant\\ApplicantRegister.css",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Applicant\\ApplicantRegister.css",
               "RelativeDocumentMoniker": "Style\\Applicant\\ApplicantRegister.css",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Style\\Applicant\\ApplicantRegister.css",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Applicant\\ApplicantRegister.css",
               "RelativeToolTip": "Style\\Applicant\\ApplicantRegister.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-30T04:06:25.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:06:25.202Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ApplicantRegister.aspx",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx",
               "RelativeDocumentMoniker": "Views\\Applicant\\ApplicantRegister.aspx",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx",
               "RelativeToolTip": "Views\\Applicant\\ApplicantRegister.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -149,92 +131,85 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "RegisterEmployer.aspx",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Employer\\RegisterEmployer.aspx",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Employer\\RegisterEmployer.aspx",
               "RelativeDocumentMoniker": "Views\\Employer\\RegisterEmployer.aspx",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Employer\\RegisterEmployer.aspx",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Employer\\RegisterEmployer.aspx",
               "RelativeToolTip": "Views\\Employer\\RegisterEmployer.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-30T05:15:56.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T05:15:56.733Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LoginRecruiter.css",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Style\\Employer\\LoginRecruiter.css",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Employer\\LoginRecruiter.css",
               "RelativeDocumentMoniker": "Style\\Employer\\LoginRecruiter.css",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Style\\Employer\\LoginRecruiter.css",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Employer\\LoginRecruiter.css",
               "RelativeToolTip": "Style\\Employer\\LoginRecruiter.css",
               "ViewState": "AQIAABoAAAAAAAAAAAAMwCQAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-30T04:07:02.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:07:02.486Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LoginApplicant.css",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Style\\Applicant\\LoginApplicant.css",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Applicant\\LoginApplicant.css",
               "RelativeDocumentMoniker": "Style\\Applicant\\LoginApplicant.css",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Style\\Applicant\\LoginApplicant.css",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Style\\Applicant\\LoginApplicant.css",
               "RelativeToolTip": "Style\\Applicant\\LoginApplicant.css",
               "ViewState": "AQIAAE0AAAAAAAAAAAAAAFcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-30T04:06:43.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:06:43.746Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "LoginApplicant.aspx",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx",
               "RelativeDocumentMoniker": "Views\\Applicant\\LoginApplicant.aspx",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx",
               "RelativeToolTip": "Views\\Applicant\\LoginApplicant.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-30T04:33:07.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:33:07.26Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "LoginRecruiter.aspx",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx",
               "RelativeDocumentMoniker": "Views\\Employer\\LoginRecruiter.aspx",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx",
               "RelativeToolTip": "Views\\Employer\\LoginRecruiter.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-30T04:07:43.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:07:43.482Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "ApplicantHandler.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Handler\\ApplicantHandler.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Handler\\ApplicantHandler.cs",
               "RelativeDocumentMoniker": "Handler\\ApplicantHandler.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Handler\\ApplicantHandler.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Handler\\ApplicantHandler.cs",
               "RelativeToolTip": "Handler\\ApplicantHandler.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T04:11:35.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:11:35.226Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "EmployerHandler.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Handler\\EmployerHandler.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Handler\\EmployerHandler.cs",
               "RelativeDocumentMoniker": "Handler\\EmployerHandler.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Handler\\EmployerHandler.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Handler\\EmployerHandler.cs",
               "RelativeToolTip": "Handler\\EmployerHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T04:11:40.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:11:40.232Z"
             },
             {
               "$type": "Document",
@@ -243,8 +218,7 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__WORKSPHERE_WORKSPHERE_APP_DATA_WORKSPHEREDB.MDF/True/SqlTable/dbo.Employers.sql",
               "ToolTip": "dbo.Employers [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-30T04:09:06.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:09:06.576Z"
             },
             {
               "$type": "Document",
@@ -253,42 +227,39 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__WORKSPHERE_WORKSPHERE_APP_DATA_WORKSPHEREDB.MDF/True/SqlTable/dbo.Applicants.sql",
               "ToolTip": "dbo.Applicants [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-30T04:08:44.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T04:08:44.194Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "ApplicantRepository.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Repository\\ApplicantRepository.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Repository\\ApplicantRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ApplicantRepository.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Repository\\ApplicantRepository.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Repository\\ApplicantRepository.cs",
               "RelativeToolTip": "Repository\\ApplicantRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T07:53:01.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T07:53:01.938Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "ApplicantFactory.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Factory\\ApplicantFactory.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Factory\\ApplicantFactory.cs",
               "RelativeDocumentMoniker": "Factory\\ApplicantFactory.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Factory\\ApplicantFactory.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Factory\\ApplicantFactory.cs",
               "RelativeToolTip": "Factory\\ApplicantFactory.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAuwCEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T07:50:59.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T07:50:59.567Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Navbar.Master",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Navbar.Master",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Navbar.Master",
               "RelativeDocumentMoniker": "Navbar.Master",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Navbar.Master",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Navbar.Master",
               "RelativeToolTip": "Navbar.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -299,40 +270,37 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "LoginRecruiter.aspx.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx.cs",
               "RelativeDocumentMoniker": "Views\\Employer\\LoginRecruiter.aspx.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Employer\\LoginRecruiter.aspx.cs",
               "RelativeToolTip": "Views\\Employer\\LoginRecruiter.aspx.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAYwCAAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T17:16:30.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T17:16:30.001Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "ApplicantRegister.aspx.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx.cs",
               "RelativeDocumentMoniker": "Views\\Applicant\\ApplicantRegister.aspx.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\ApplicantRegister.aspx.cs",
               "RelativeToolTip": "Views\\Applicant\\ApplicantRegister.aspx.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T17:12:58.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T17:12:58.991Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "LoginApplicant.aspx.cs",
-              "DocumentMoniker": "D:\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx.cs",
+              "DocumentMoniker": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx.cs",
               "RelativeDocumentMoniker": "Views\\Applicant\\LoginApplicant.aspx.cs",
-              "ToolTip": "D:\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx.cs",
+              "ToolTip": "D:\\School\\Univ\\Semester 4\\Software Engineering\\github\\worksphere\\Worksphere\\Views\\Applicant\\LoginApplicant.aspx.cs",
               "RelativeToolTip": "Views\\Applicant\\LoginApplicant.aspx.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T17:12:57.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T17:12:57.942Z"
             }
           ]
         }
