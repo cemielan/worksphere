@@ -1,0 +1,29 @@
+﻿* {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+}
+
+.container h2 {
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.Advice p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.CVtips {
+    padding-top: 50px;
+}
+
+.CVtips h3 {
+    font-size: 20px;
+}
+
+.CVtips img {
+    width: 175px;
+    height: 200px;
+}

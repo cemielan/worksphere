@@ -90,10 +90,12 @@
       <LastGenOutput>WorksphereModel.cs</LastGenOutput>
     </Content>
     <Content Include="Style\Applicant\ApplicantRegister.css" />
+    <Content Include="Style\Applicant\CareerAdvice.css" />
     <Content Include="Style\Applicant\LoginApplicant.css" />
     <Content Include="Style\Employer\LoginRecruiter.css" />
     <Content Include="Style\Employer\RegisterEmployer.css" />
     <Content Include="Views\Applicant\ApplicantRegister.aspx" />
+    <Content Include="Views\Applicant\CareerAdcive.aspx" />
     <Content Include="Views\Applicant\LoginApplicant.aspx" />
     <Content Include="Views\Employer\LoginRecruiter.aspx" />
     <Content Include="Views\Employer\RegisterEmployer.aspx" />
@@ -159,6 +161,13 @@
     </Compile>
     <Compile Include="Views\Applicant\ApplicantRegister.aspx.designer.cs">
       <DependentUpon>ApplicantRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Applicant\CareerAdcive.aspx.cs">
+      <DependentUpon>CareerAdcive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Applicant\CareerAdcive.aspx.designer.cs">
+      <DependentUpon>CareerAdcive.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Applicant\LoginApplicant.aspx.cs">
       <DependentUpon>LoginApplicant.aspx</DependentUpon>
