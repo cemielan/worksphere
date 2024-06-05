@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Worksphere.Views.Employer
-{
+namespace Worksphere.Views.Employer {
 
 
-    public partial class RegisterEmployer
-    {
+    public partial class RegisterEmployer {
 
         /// <summary>
         /// TbCompanyName control.

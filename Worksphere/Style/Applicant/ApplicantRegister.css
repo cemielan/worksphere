@@ -20,7 +20,7 @@
     display: flex;
     flex-direction:column;
     padding: 0px 40px;
-    height: 80vh;
+    height: 160vh;
     justify-content: space-evenly;
     border-radius: 20px;
 }
@@ -68,32 +68,52 @@
     border-radius: 40px;
     border: none;
     background-color: white;
-    font-weight:800;
+    font-weight: 500;
+}
+
+.button-upload:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
 }
 
 .button-register {
     align-self: end;
-    font-size: 23px;
+    font-size: 20px;
     padding: 20px 30px;
     border-radius: 40px;
     border: none;
     background-color: white;
-    font-weight: 800;
+    font-weight: 500;
+}
+
+.button-register:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
 }
 
 .label-error {
     margin-top:5px;
     margin-left: 20px;
     color: red;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-.button-back{
-    background-color:white;
-    font-weight: 700;
-    font-size:17px;
+.button-back {
+    background-color: white;
+    font-weight: 500;
+    font-size: 18px;
     margin-top: 30px;
-    border-radius:20px;
-    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    padding: 20px 30px;
 }
+
+.button-back:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
+}
+

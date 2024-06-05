@@ -7,12 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Worksphere.Views.Applicant
-{
+namespace Worksphere.Views.Applicant {
 
 
-    public partial class ApplicantRegister
-    {
+    public partial class ApplicantRegister {
 
         /// <summary>
         /// TbName control.

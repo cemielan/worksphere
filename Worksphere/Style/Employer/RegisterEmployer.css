@@ -10,10 +10,10 @@
     border-radius: 20px;
 }
 
-.container h2 {
-    font-size: 50px;
-    font-weight: 800;
-}
+    .container h2 {
+        font-size: 50px;
+        font-weight: 800;
+    }
 
 .register-detail {
     background-color: rgb(243,243,243);
@@ -21,16 +21,16 @@
     flex-direction: column;
     padding: 0px 40px;
     padding-bottom: 40px;
-    height: 100vh;
+    height: 160vh;
     justify-content: space-evenly;
     border-radius: 20px;
     gap: 20px;
 }
 
-.register-detail h4 {
-    font-size: 40px;
-    margin: 30px 0px;
-}
+    .register-detail h4 {
+        font-size: 40px;
+        margin: 30px 0px;
+    }
 
 .input-container {
     display: flex;
@@ -64,33 +64,51 @@
     border-radius: 40px;
     border: none;
     background-color: white;
-    font-weight: 800;
+    font-weight: 500;
+}
+
+.button-upload:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
 }
 
 .button-register {
     align-self: end;
-    font-size: 23px;
+    font-size: 20px;
     padding: 20px 30px;
     border-radius: 40px;
     border: none;
     background-color: white;
-    font-weight: 800;
+    font-weight: 500;
+}
+
+.button-register:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
 }
 
 .label-error {
     margin-top: 5px;
     margin-left: 20px;
     color: red;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .button-back {
     background-color: white;
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 18px;
     margin-top: 30px;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    padding: 20px 30px;
 }
 
+.button-register:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.5s;
+}
