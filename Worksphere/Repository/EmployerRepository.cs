@@ -15,7 +15,8 @@ namespace Worksphere.Repository
         {
             return (from id in db.Employers1 select id.EmployerID).FirstOrDefault();
         }
-        public static void registerEmployer(string CompanyName, string email, string name, string password, string address, string phoneNumber,string type, string logo)
+        public static void registerEmployer(string CompanyName, string email, string name,
+            string password, string address, string phoneNumber,string type, string logo)
         {
             Employers newEmployer = EmployerFactory.Create(CompanyName, email, name, password, address, phoneNumber,type, null);
             db.Employers1.Add(newEmployer);

@@ -92,11 +92,13 @@
     <Content Include="Style\Applicant\ApplicantRegister.css" />
     <Content Include="Style\Applicant\CareerAdvice.css" />
     <Content Include="Style\Applicant\LoginApplicant.css" />
+    <Content Include="Style\Employer\AddJob.css" />
     <Content Include="Style\Employer\LoginRecruiter.css" />
     <Content Include="Style\Employer\RegisterEmployer.css" />
     <Content Include="Views\Applicant\ApplicantRegister.aspx" />
     <Content Include="Views\Applicant\CareerAdcive.aspx" />
     <Content Include="Views\Applicant\LoginApplicant.aspx" />
+    <Content Include="Views\Employer\AddJob.aspx" />
     <Content Include="Views\Employer\LoginRecruiter.aspx" />
     <Content Include="Views\Employer\RegisterEmployer.aspx" />
     <Content Include="Web.config" />
@@ -106,6 +108,7 @@
     <Compile Include="Controller\EmployerController.cs" />
     <Compile Include="Factory\ApplicantFactory.cs" />
     <Compile Include="Factory\EmployerFactory.cs" />
+    <Compile Include="Factory\WorkFactory.cs" />
     <Compile Include="Handler\ApplicantHandler.cs" />
     <Compile Include="Handler\EmployerHandler.cs" />
     <Compile Include="Model\Applicants.cs">
@@ -155,6 +158,7 @@
     <Compile Include="Repository\ApplicantRepository.cs" />
     <Compile Include="Repository\DatabaseSingleton.cs" />
     <Compile Include="Repository\EmployerRepository.cs" />
+    <Compile Include="Repository\WorkRepository.cs" />
     <Compile Include="Views\Applicant\ApplicantRegister.aspx.cs">
       <DependentUpon>ApplicantRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,6 +179,13 @@
     </Compile>
     <Compile Include="Views\Applicant\LoginApplicant.aspx.designer.cs">
       <DependentUpon>LoginApplicant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employer\AddJob.aspx.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Employer\AddJob.aspx.designer.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Employer\LoginRecruiter.aspx.cs">
       <DependentUpon>LoginRecruiter.aspx</DependentUpon>
