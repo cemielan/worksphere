@@ -41,19 +41,32 @@
         <div class="interview-prep">
                 <h3>Interview prep</h3>
 
-            <div class="container1">
-                <h4>Common Questions</h4>
-                <div class="questions">
-                    <p>
-                        Tell me about yourself?
-                    </p>
+            <div class="main-container">
+
+                <div class="container1">
+                    <h4>Common Questions</h4>
+                    <div class="questions">
+                        <p>
+                            Tell me about yourself?
+                        </p>
+                    </div>
+
+                    <div class="redirect-button">
+                        <p>Want to discover more questions like this?</p>
+                        <asp:Button ID="ButtonStart" runat="server" Text="Start" class="button-start" />
+                    </div>
+
+                    <div class="illustration">
+                        <img src="/SE ILLUSTRATIONS/The Little Things Home Office.png">
+                    </div>
                 </div>
 
-                <div class="redirect-button">
-                    <p>Want to discover more questions like this?</p>
-                    <asp:Button ID="ButtonStart" runat="server" Text="Start" class="button-start" />
+                <div class="container2">
+                    <h4>Answered by our community!</h4>
                 </div>
+
             </div>
+
         </div>
           
     </section>
