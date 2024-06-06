@@ -3,6 +3,7 @@
 }
 
 .container {
+    margin: 150px;
 }
 
 .container h2 {
@@ -12,7 +13,7 @@
 
 .Advice p {
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .CVtips {
@@ -24,6 +25,55 @@
 }
 
 .CVtips img {
-    width: 175px;
-    height: 200px;
+    width: 365px;
+    height: 480px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-grow: 1;
+}
+
+.interview-prep h3 {
+    font-size: 20px;
+}
+
+.container1 h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.questions {
+    border-radius: 50px;
+    background: #4CD681;
+    border: 1px solid;
+    text-align: center;
+    font-weight: 700;
+    width: 230px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.redirect-button {
+    background: #D9D9D9;
+    border-radius: 20px;
+    width: 260px;
+    height: 150px;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 60px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.button-start{
+    background-color: #4CD681;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 3px 1px;
+    width: 80px;
+    font-weight: 700;
+    margin-top: 20px;
 }
