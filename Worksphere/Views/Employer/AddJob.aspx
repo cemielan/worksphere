@@ -24,8 +24,9 @@
             <div class="jobtype-salary-input">
                 <div>
                     <asp:DropDownList ID="DDLJobType" placeholder="Job Type" runat="server" CssClass="ddl-input">
-                        <asp:ListItem Value="WNI">WNI</asp:ListItem>
-                        <asp:ListItem Value="WNA">WNA</asp:ListItem>
+                        <asp:ListItem Value="Full-time">Full-time</asp:ListItem>
+                        <asp:ListItem Value="Part-time">Part-time</asp:ListItem>
+                        <asp:ListItem Value="Freelance">Freelance</asp:ListItem>
                     </asp:DropDownList>
                     <asp:Label ID="LblJobType" runat="server" Text="" CssClass="label-error"></asp:Label>
                 </div>
@@ -43,8 +44,22 @@
 
             <div class="input-container">
                 <asp:DropDownList ID="DDLJobCategory" placeholder="Job Category" runat="server" CssClass="ddl-input">
-                    <asp:ListItem Value="WNI">WNI</asp:ListItem>
-                    <asp:ListItem Value="WNA">WNA</asp:ListItem>
+                    <asp:ListItem Value="Information and Technology">Information and Technology</asp:ListItem>
+                    <asp:ListItem Value="Architecture">Architecture</asp:ListItem>
+                    <asp:ListItem Value="Finance">Finance</asp:ListItem>
+                    <asp:ListItem Value="Human Resource">Human Resource</asp:ListItem>
+                    <asp:ListItem Value="Engineering">Engineering</asp:ListItem>
+                    <asp:ListItem Value="Health and Medicine">Health and Medicin</asp:ListItem>
+                    <asp:ListItem Value="Design">Design</asp:ListItem>
+                    <asp:ListItem Value="Education">Education</asp:ListItem>
+                    <asp:ListItem Value="Sports">Sports</asp:ListItem>
+                    <asp:ListItem Value="Entertainment">Entertainment</asp:ListItem>
+                    <asp:ListItem Value="Marketing">Marketing</asp:ListItem>
+                    <asp:ListItem Value="Administration">Administration</asp:ListItem>
+                    <asp:ListItem Value="Public Service">Public Service</asp:ListItem>
+                    <asp:ListItem Value="Management">Management</asp:ListItem>
+                    <asp:ListItem Value="Law">Law</asp:ListItem>
+                    <asp:ListItem Value="Industry">Industry</asp:ListItem>
                 </asp:DropDownList>
                 <asp:Label ID="LblJobCategory" runat="server" Text="" CssClass="label-error"></asp:Label>
             </div>
