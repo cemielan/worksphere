@@ -25,7 +25,7 @@ namespace Worksphere.Views.Applicant
 
             if (applicant != null)
             {
-                Session["users"] = applicant;
+                Session["users"] = applicant.ApplicantID;
                 Response.Redirect("#");
             } else
             {

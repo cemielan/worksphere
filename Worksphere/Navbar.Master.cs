@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Worksphere.Model;
 
 namespace Worksphere
 {
@@ -11,6 +12,10 @@ namespace Worksphere
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string id = (string)Session["users"];
+            if (id.StartsWith("AP"){
+                
+            }
 
         }
     }

@@ -22,10 +22,10 @@ namespace Worksphere.Views.Employer
             string password = TbPassword.Text;
 
             Employers employer = EmployerController.LoginEmployer(email, password);
-
+            
             if (employer != null)
             {
-                Session["users"] = "Employer";
+                Session["users"] = employer.EmployerID;
                 Response.Redirect("#");
             }
             else
