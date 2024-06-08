@@ -121,5 +121,10 @@ namespace Worksphere.Controller
             Applicants applicant =  ApplicantHandler.doLogin(email,password);
             return applicant;
         }
+
+        public static Applicants getUserByID (String id)
+        {
+            return ApplicantHandler.getUserByID(id);
+        }
     }
 }

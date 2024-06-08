@@ -22,5 +22,10 @@ namespace Worksphere.Handler
             return applicant;
             
         }
+
+        public static Applicants getUserByID (string id)
+        {
+            return ApplicantRepository.getUserByID(id);
+        }
     }
 }

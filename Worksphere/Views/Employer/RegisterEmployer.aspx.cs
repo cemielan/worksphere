@@ -45,7 +45,7 @@ namespace Worksphere.Views.Employer
 
         protected void BtnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Employer/LoginRecruiter.aspx");
+            Response.Redirect("~/Views/Employer/LoginEmployer.aspx");
         }
     }
 }
