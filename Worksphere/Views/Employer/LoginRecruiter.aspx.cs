@@ -25,8 +25,11 @@ namespace Worksphere.Views.Employer
             
             if (employer != null)
             {
-                Session["users"] = employer.EmployerID;
-                Response.Redirect("#");
+                HttpCookie userCookie = new HttpCookie("EmployerID", employer.EmployerID);
+                userCookie.Expires = DateTime.Now.AddHours(1);
+                Response.Cookies.Add(userCookie);
+
+                Response.Redirect("~/Views/Employer/AddJob.aspx?id=" + employer.EmployerID);
             }
             else
             {

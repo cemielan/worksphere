@@ -23,7 +23,7 @@ namespace Worksphere.Factory {
 
             return newID;
         }
-        public static Work Create(String WorkID, String WorkTitle, String WorkDescription, String WorkType, 
+        public static Work Create(String WorkTitle, String WorkDescription, String WorkType, 
             String Keyword, String CategoryID, String EmployerID, int Salary) {
             Work newWork = new Work();
             newWork.WorkID = getID();

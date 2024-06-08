@@ -21,5 +21,19 @@ namespace Worksphere.Handler
             return employer;
 
         }
+        public static String GetCategoryIDByName(String CategoryName) {
+            return EmployerRepository.GetCategoryIDByName(CategoryName);
+        }
+
+        public static Employers GetEmployerByID(String EmployerID) {
+            Employers employer = EmployerRepository.GetEmployerByID(EmployerID);
+
+            if (employer == null) {
+                return null;
+            }
+            else {
+                return employer;
+            }
+        }
     }
 }

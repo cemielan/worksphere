@@ -49,7 +49,7 @@
                     <asp:ListItem Value="Finance">Finance</asp:ListItem>
                     <asp:ListItem Value="Human Resource">Human Resource</asp:ListItem>
                     <asp:ListItem Value="Engineering">Engineering</asp:ListItem>
-                    <asp:ListItem Value="Health and Medicine">Health and Medicin</asp:ListItem>
+                    <asp:ListItem Value="Health and Medicine">Health and Medicine</asp:ListItem>
                     <asp:ListItem Value="Design">Design</asp:ListItem>
                     <asp:ListItem Value="Education">Education</asp:ListItem>
                     <asp:ListItem Value="Sports">Sports</asp:ListItem>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Worksphere.Handler;
 using Worksphere.Model;
+using Worksphere.Repository;
 
 namespace Worksphere.Controller
 {
@@ -119,5 +120,15 @@ namespace Worksphere.Controller
             Employers employer = EmployerHandler.doLogin(email, password);
             return employer;
         }
+
+        public static String GetCategoryIDByName(String CategoryName) {
+            return EmployerHandler.GetCategoryIDByName(CategoryName);
+        }
+
+        public static Employers GetEmployerByID(String EmployerID) {
+            return EmployerHandler.GetEmployerByID(EmployerID);
+        }
+
+
     }
 }

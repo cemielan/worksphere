@@ -12,10 +12,6 @@ namespace Worksphere
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = (string)Session["users"];
-            if (id.StartsWith("AP"){
-                
-            }
 
         }
     }

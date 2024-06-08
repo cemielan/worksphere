@@ -106,11 +106,13 @@
   <ItemGroup>
     <Compile Include="Controller\ApplicantController.cs" />
     <Compile Include="Controller\EmployerController.cs" />
+    <Compile Include="Controller\WorkController.cs" />
     <Compile Include="Factory\ApplicantFactory.cs" />
     <Compile Include="Factory\EmployerFactory.cs" />
     <Compile Include="Factory\WorkFactory.cs" />
     <Compile Include="Handler\ApplicantHandler.cs" />
     <Compile Include="Handler\EmployerHandler.cs" />
+    <Compile Include="Handler\WorkHandler.cs" />
     <Compile Include="Model\Applicants.cs">
       <DependentUpon>WorksphereModel.tt</DependentUpon>
     </Compile>

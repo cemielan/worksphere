@@ -29,5 +29,15 @@ namespace Worksphere.Repository
             return (from u in db.Employers1 where u.CompanyEmail == email && u.Password == password select u).FirstOrDefault();
 
         }
+        public static String GetCategoryIDByName(String CategoryName) {
+            return (from x in db.Categories
+                    where x.CategoryName.Equals(CategoryName, StringComparison.OrdinalIgnoreCase)
+                    select x.CategoryID).FirstOrDefault();
+        }
+
+        public static Employers GetEmployerByID(String id) {
+            return db.Employers1.FirstOrDefault(e => e.EmployerID.Equals(id));
+        }
+
     }
 }
