@@ -47,7 +47,7 @@ namespace Worksphere.Views.Applicant
 
         protected void BtnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Applicant/LoginApplicant.aspx");
+            Response.Redirect("~/Views/Applicant/ApplicantLogin.aspx");
         }
     }
 }

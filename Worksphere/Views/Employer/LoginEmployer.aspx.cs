@@ -9,7 +9,7 @@ using Worksphere.Model;
 
 namespace Worksphere.Views.Employer
 {
-    public partial class LoginRecruiter : System.Web.UI.Page
+    public partial class LoginEmployer : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,7 +22,7 @@ namespace Worksphere.Views.Employer
             string password = TbPassword.Text;
 
             Employers employer = EmployerController.LoginEmployer(email, password);
-            
+
             if (employer != null)
             {
                 HttpCookie userCookie = new HttpCookie("EmployerID", employer.EmployerID);

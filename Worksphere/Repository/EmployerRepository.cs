@@ -13,7 +13,7 @@ namespace Worksphere.Repository
 
         public static string getLastID()
         {
-            return (from id in db.Employers1 select id.EmployerID).FirstOrDefault();
+            return (from id in db.Employers1 select id.EmployerID).ToList().LastOrDefault();
         }
         public static void registerEmployer(string CompanyName, string email, string name,
             string password, string address, string phoneNumber,string type, string logo)

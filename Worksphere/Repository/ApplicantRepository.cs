@@ -27,8 +27,13 @@ namespace Worksphere.Repository
         public static Applicants getApplicant (string email, string password)
         {
             return (from u in db.Applicants1 where u.Email==email && u.Password==password select u).FirstOrDefault();
-
         }
-        
+
+        public static Applicants getUserByID (string id)
+        {
+            return (from a in db.Applicants1 where a.ApplicantID.Equals(id) select a).FirstOrDefault();
+        }
+
+
     }
 }

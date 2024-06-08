@@ -9,7 +9,7 @@ using Worksphere.Model;
 
 namespace Worksphere.Views.Applicant
 {
-    public partial class LoginApplicant : System.Web.UI.Page
+    public partial class ApplicantLogin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,7 +18,7 @@ namespace Worksphere.Views.Applicant
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            string email = TbEmail.Text; 
+            string email = TbEmail.Text;
             string password = TbPassword.Text;
 
             Applicants applicant = ApplicantController.LoginApplicant(email, password);
@@ -26,8 +26,9 @@ namespace Worksphere.Views.Applicant
             if (applicant != null)
             {
                 Session["users"] = applicant.ApplicantID;
-                Response.Redirect("#");
-            } else
+                Response.Redirect("~/Views/Applicant/CareerAdvice.aspx");
+            }
+            else
             {
                 LblError.Text = "Email or Password is wrong";
             }

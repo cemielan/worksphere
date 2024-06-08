@@ -27,7 +27,7 @@
             </div>
 
             <div class="input-container">
-                <asp:TextBox ID="TbPassword" runat="server" placeholder="Create Password (must contain at least 5 characters" CssClass="tb-input"></asp:TextBox>
+                <asp:TextBox ID="TbPassword" runat="server" placeholder="Create Password (must contain at least 5 characters" CssClass="tb-input" TextMode="Password"></asp:TextBox>
                 <asp:Label ID="LblPass" runat="server" Text="" CssClass="label-error"></asp:Label>
             </div>
 
